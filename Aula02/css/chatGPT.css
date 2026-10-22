@@ -1,0 +1,343 @@
+/* =========================================
+   CADASTRO DE DEVS
+   Tema: Dark Tech + Neon
+   ========================================= */
+
+/* 1. Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo: #080d19;
+    --painel: #111a2e;
+    --campo: #0b1222;
+    --primaria: #00e5ff;
+    --secundaria: #8b5cf6;
+    --texto: #f1f5f9;
+    --texto-secundario: #94a3b8;
+    --borda: #26344f;
+}
+
+body {
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--texto);
+
+    background:
+        radial-gradient(circle at 15% 15%,
+            rgba(139, 92, 246, 0.18),
+            transparent 35%),
+        radial-gradient(circle at 85% 85%,
+            rgba(0, 229, 255, 0.12),
+            transparent 35%),
+        var(--fundo);
+}
+
+/* 2. Cabeçalho */
+#titulo {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+    animation: aparecer 0.8s ease;
+}
+
+#titulo h1 {
+    margin-bottom: 12px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    background: linear-gradient(90deg,
+            var(--primaria),
+            #a78bfa,
+            #ffffff);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#titulo p {
+    color: var(--texto-secundario);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* 3. Formulário principal */
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+
+    background: rgba(17, 26, 46, 0.94);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.4),
+        0 0 35px rgba(0, 229, 255, 0.05);
+
+    backdrop-filter: blur(15px);
+    animation: subir 0.8s ease;
+}
+
+/* 4. Grupos de campos */
+.grupo {
+    display: block;
+    min-width: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    border: none;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Rótulos principais */
+.campo>label:first-child {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* 5. Campos de texto */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    color: var(--texto);
+    background: var(--campo);
+
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+/* Texto dos placeholders */
+input::placeholder,
+textarea::placeholder {
+    color: #64748b;
+}
+
+/* Efeito ao clicar nos campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primaria);
+    background: #101b30;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 229, 255, 0.12),
+        0 0 18px rgba(0, 229, 255, 0.08);
+}
+
+/* 6. Lista de experiência */
+select {
+    cursor: pointer;
+}
+
+select option {
+    color: var(--texto);
+    background: var(--painel);
+}
+
+/* 7. Radio buttons e checkboxes */
+
+/* Organiza as opções horizontalmente */
+.campo:has(input[type="radio"]),
+.campo:has(input[type="checkbox"]) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Pergunta ocupa a linha inteira */
+.campo:has(input[type="radio"])>label:first-child,
+.campo:has(input[type="checkbox"])>label:first-child {
+    flex-basis: 100%;
+    margin-bottom: 4px;
+}
+
+/* Estiliza os controles */
+.campo input[type="radio"],
+.campo input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+
+    accent-color: var(--primaria);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Rótulos das opções */
+.campo label.radio,
+.campo label.check {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0 14px 0 0;
+    color: var(--texto-secundario);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+/* Aproxima o texto do respectivo controle */
+.campo input[type="radio"]+label.radio,
+.campo input[type="checkbox"]+label.check {
+    margin-left: -6px;
+}
+
+/* Efeito ao passar o mouse */
+.campo label.radio:hover,
+.campo label.check:hover {
+    color: var(--primaria);
+}
+
+/* 8. Área de texto */
+textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* 9. Botões */
+.botao {
+    min-width: 130px;
+    margin: 8px 8px 0 0;
+    padding: 13px 25px;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+/* Botão Enviar */
+.botao[type="submit"] {
+    color: #06111e;
+
+    background: linear-gradient(135deg,
+            var(--primaria),
+            #67f7d8);
+
+    box-shadow: 0 5px 20px rgba(0, 229, 255, 0.18);
+}
+
+.botao[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0, 229, 255, 0.3);
+}
+
+/* Botão Limpar */
+.botao[type="reset"] {
+    color: #cbd5e1;
+    background: transparent;
+    border-color: var(--borda);
+}
+
+.botao[type="reset"]:hover {
+    color: white;
+    background: #26344f;
+    border-color: #64748b;
+    transform: translateY(-2px);
+}
+
+/* Efeito ao pressionar os botões */
+.botao:active {
+    transform: scale(0.97);
+}
+
+/* 10. Animações */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 11. Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 30px 14px;
+    }
+
+    form {
+        padding: 24px 18px;
+        border-radius: 16px;
+    }
+
+    #titulo h1 {
+        font-size: 2rem;
+    }
+
+    /* Permite que as opções quebrem a linha
+       quando não houver espaço suficiente */
+    .campo:has(input[type="radio"]),
+    .campo:has(input[type="checkbox"]) {
+        column-gap: 10px;
+        row-gap: 14px;
+    }
+
+    .campo label.radio,
+    .campo label.check {
+        margin-right: 8px;
+    }
+
+    /* Botões ocupam a largura disponível */
+    .botao {
+        width: 100%;
+        margin: 6px 0;
+    }
+}

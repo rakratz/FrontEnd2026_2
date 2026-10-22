@@ -1,0 +1,11 @@
+/* Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TAGS sóc coloca o nome da tag */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a51d1d;
+}
