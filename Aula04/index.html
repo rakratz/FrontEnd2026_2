@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main class="cartao">
+        <header>
+            <h1>Entrar</h1>
+            <p class="descricao">Digite seu usuário e sua senha para acessar.</p>
+        </header>
+
+        <form id="form-login">
+            <div class="campo">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+            </div>
+
+            <button type="submit">Entrar</button>
+            <p id="mensagem-login" class="mensagem" role="status"></p>
+        </form>
+
+        <footer>
+            <a href="recuperar.html">Esqueci minha senha</a>
+        </footer>
+    </main>
+</body>
+
+</html>
