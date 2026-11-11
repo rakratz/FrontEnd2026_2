@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+
+    <!-- Carrega a mesma folha de estilos da galeria. -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoMarca">LOGO</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastro de Produto</h1>
+
+        <!-- action indica a página de destino.
+             method="get" coloca os dados de teste na URL. -->
+        <form class="form-produto" action="produtos.html" method="get">
+            <!-- O for do rótulo deve ser igual ao id do campo.
+                 name identifica o dado no envio.
+                 required torna o preenchimento obrigatório. -->
+            <label for="nome">Nome do produto</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- min define o menor preço. step permite usar centavos. -->
+            <label for="preco">Preço (R$)</label>
+            <input type="number" id="preco" name="preco" min="0.01" step="0.01" required>
+
+            <!-- select cria uma lista de opções.
+                 A primeira opção tem valor vazio para exigir uma escolha. -->
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="informatica">Informática</option>
+                <option value="eletronicos">Eletrônicos</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+
+            <!-- textarea aceita várias linhas. A descrição é opcional. -->
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" rows="3"></textarea>
+
+            <!-- submit aciona a validação e o envio do formulário. -->
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados &copy; 2026</p>
+    </footer>
+</body>
+
+</html>
