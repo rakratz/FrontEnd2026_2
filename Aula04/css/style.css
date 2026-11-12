@@ -94,3 +94,30 @@ button {
     /* Arredonda os cantos. */
     border-radius: 8px;
 }
+
+input {
+    /* Borda contínua, fina e cinza. */
+    border: 1px solid #a0aec0;
+}
+
+button { 
+    /* Remove a borda padrão do botão. */
+    border: 0;
+
+    /* Fundo roxo. */
+    background: #4338ca;
+
+    /* Texto branco. */
+    color: #ffffff;
+
+    /* Destaca o texto do botão. */
+    font-weight: 600;
+
+    /* Mostra o cursor em forma de mão. */
+    cursor: pointer;
+}
+
+button:hover { 
+    /* Escurece o fundo do botão. */
+    background: #3730a3;
+}
