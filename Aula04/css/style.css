@@ -24,3 +24,28 @@ body {
     color: #18223a;
 
 }
+
+/* Estilização da classe cartão */
+.cartao {
+    /* Ocupa a largura disponível em telas pequenas. */
+    width: 100%;
+
+    /* Limita a largura do cartão em telas maiores. */
+    max-width: 400px;
+
+    /* Cria espaço por dentro, ao redor do conteúdo. */
+    padding: 32px;
+
+    /* Fundo branco. */
+    background: #ffffff;
+
+    /* Arredonda os cantos. */
+    border-radius: 20px;
+
+    /* A sombra */
+    /* 0 de deslocamento lateral */
+    /* 12px para baixo */
+    /* 32px de desfoque*/
+    /* cor da sombra #18223a1a */
+    box-shadow: 0 12px 32px #18223a1a;
+}
