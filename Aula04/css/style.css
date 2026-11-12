@@ -1,0 +1,26 @@
+/* Configurações Globais */
+* {
+    /* Com border-box, o padding e a borda entram no cálculo da largura. */
+    box-sizing: border-box;
+}
+
+body {
+    /* Remove a margem padrão do navegador. */
+    margin: 0;     
+    /* O Grid centraliza o cartão nos eixos vertical e horizontal. */
+    display: grid;
+    place-items: center;
+
+    /* Deixa espaço entre o cartão e as bordas da tela. */
+    padding: 24px;
+
+    /* Usa a fonte do sistema, com uma alternativa genérica. */
+    font-family: system-ui, sans-serif;
+
+    /* Cor de fundo da página. */
+    background: #eef2ff;
+
+    /* Cor padrão dos textos. */
+    color: #18223a;
+
+}
