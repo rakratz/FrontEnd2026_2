@@ -65,3 +65,32 @@ h1 {
     /* Tom mais suave para o texto de apoio. */
     color: #526078;
 }
+
+/* Formulário */
+.campo {
+    /* Cria espaço abaixo de cada grupo. */
+    margin-bottom: 16px;
+}
+
+label {
+    /* Coloca o rótulo em uma linha própria. */
+    display: block;
+
+    /* Separa o rótulo do campo. */
+    margin-bottom: 6px;
+
+    /* Dá mais destaque ao texto do rótulo. */
+    font-weight: 600;
+}
+
+input, 
+button {
+    /* Ocupa toda a largura disponível no formulário. */
+    width: 100%;
+
+    /* Cria espaço interno ao redor do texto. */
+    padding: 12px;
+
+    /* Arredonda os cantos. */
+    border-radius: 8px;
+}
