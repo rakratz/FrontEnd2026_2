@@ -121,3 +121,41 @@ button:hover {
     /* Escurece o fundo do botão. */
     background: #3730a3;
 }
+
+a {
+    /* Remove o sublinhado do link. */
+    text-decoration: none;
+
+    /* Cor roxa para o link. */
+    color: #4338ca;
+}
+
+.mensagem {
+    /* Cria espaço acima da mensagem. */
+    margin-top: 16px;
+
+    /* Centraliza o texto da mensagem. */
+    text-align: center;
+}
+
+/* O JavaScript adiciona esta classe quando a operação tem sucesso. */
+.sucesso {
+    /* Texto verde. */
+    color: #166534;
+    
+}
+
+/* O JavaScript adiciona esta classe quando o login falha. */
+.erro {
+    /* Texto vermelho. */
+    color: #b91c1c;
+    
+}
+
+footer { 
+    /* Separa o rodapé do formulário. */
+    margin-top: 20px;
+
+    /* Centraliza o link. */
+    text-align: center;
+}
