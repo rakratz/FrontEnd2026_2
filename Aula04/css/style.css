@@ -49,3 +49,19 @@ body {
     /* cor da sombra #18223a1a */
     box-shadow: 0 12px 32px #18223a1a;
 }
+
+h1 { 
+    /* Remove a margem padrão do título. */
+    margin: 0;
+
+    /* 1,8 vez o tamanho de fonte do elemento html. */
+    font-size: 1.8rem;
+}
+
+.descricao {
+    /* 8px acima, 0 nas laterais e 24px abaixo. */
+    margin: 8px 0 24px;
+
+    /* Tom mais suave para o texto de apoio. */
+    color: #526078;
+}
