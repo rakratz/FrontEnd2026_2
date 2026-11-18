@@ -1,0 +1,30 @@
+# Aprendizagem Orientada a Objetivo
+
+- Programação
+- Desenvolvimento de Jogos
+- Inteligencia Artifical
+
+Antes da gente partir pra primeira aula, eu preciso te explicar algumas coisas sobre esse módulo:
+
+
+
+1 - O objetivo dele é te ensinar a programar te mostrando como os mecanismos internos do computador funcionam. Ou seja, te ensinando os fundamentos da computação, pra que você realmente entenda o que tá acontecendo por trás dos códigos.
+
+
+
+2 - Nesse módulo, nós vamos aprender a lógica de programação pura. Isso significa que todos os nossos códigos vão ser executados numa janelinha preta com letras e números apenas. Nós só vamos ter uma janela com imagens, efeitos e botões quando nós avançarmos para o módulo 2.
+
+
+
+3 - Esse é o módulo mais importante do curso inteiro. Se você dominar ele 100%, já era! O módulo dos jogos vai ficar muito fácil e o módulo de IA vai ajudar bastante também. Porque a matemática que nós vamos aprender lá tem muitas semelhanças com os conceitos daqui. Então dê muita atenção pra esse primeiro módulo, porque ele vai ser a sua base pro resto do curso todo.
+
+
+
+4 - Além de aprender os fundamentos da computação e da programaçao, nesse módulo nós já vamos começar a construir o nosso jogo. Aqui nós já vamos escrever alguns códigos que realmente vão ser usados no jogo final que a nossa IA vai aprender a jogar.
+
+
+
+​E pra começar nossa jornada pela programação, nós vamos precisar de três ferramentas: Uma linguagem, um compilador e um IDE. E é sobre elas que nós vamos falar nas próximas aulas.
+
+
+Agora marca essa introdução como concluída e segue pra primeira aula! Rambora!
