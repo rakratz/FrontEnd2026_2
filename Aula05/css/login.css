@@ -1,0 +1,69 @@
+/* Fundo escuro e cartão no centro da tela */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #2c2c2c;
+    font-family: Arial, sans-serif;
+}
+
+/* Caixa branca */
+.form-login {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 420px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Coloca um elemento abaixo do outro */
+form {
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+button {
+    padding: 15px;
+    background-color: #02b7df;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0c013b;
+}
+
+.mensagem {
+    margin: 0;
+    min-height: 1.2em;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #166534;
+}
+
+.erro {
+    color: #b91c1c;
+}
