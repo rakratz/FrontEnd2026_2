@@ -1,73 +1,173 @@
+
+/* =====================================================
+   RESET CSS
+   Remove as configurações padrão dos elementos HTML.
+   ===================================================== */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
-header {
-    background-color: #02b7df;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-nav {
-    background-color: #b3b3b3;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-main {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 0;
-    height: 300px;
-}
-aside {
-    flex: 1;
-    background-color: #fbf96e;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 300px;
+    margin: 0;              /* Remove as margens externas */
+    padding: 0;             /* Remove os espaçamentos internos */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
 
-.conteudo{
-    flex: 2;
-    background-color: #ec62e8;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 300px;
+/* =====================================================
+   BODY - Corpo principal da página
+   ===================================================== */
+
+body {
+    display: flex;              /* Ativa o Flexbox */
+    flex-direction: column;     /* Organiza os elementos em coluna */
+    align-items: center;        /* Centraliza os elementos horizontalmente */
+    margin: 0;                  /* Remove a margem padrão */
 }
+
+/* =====================================================
+   HEADER - Cabeçalho da página
+   ===================================================== */
+
+header {
+    background-color: #02b7df;  /* Define a cor de fundo */
+    width: 100%;                /* Ocupa 100% da largura disponível */
+    display: flex;              /* Ativa o Flexbox */
+    justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;        /* Centraliza o conteúdo verticalmente */
+    padding: 20px;              /* Adiciona espaçamento interno */
+}
+
+/* =====================================================
+   NAV - Menu de navegação
+   ===================================================== */
+
+nav {
+    background-color: #b3b3b3;  /* Define a cor de fundo cinza */
+    width: 100%;                /* Ocupa toda a largura da página */
+    display: flex;              /* Ativa o Flexbox */
+    justify-content: center;    /* Centraliza os itens horizontalmente */
+    align-items: center;        /* Alinha os itens verticalmente */
+    padding: 20px;              /* Adiciona espaçamento interno */
+}
+
+/* =====================================================
+   MAIN - Área principal do conteúdo
+   ===================================================== */
+
+main {
+    display: flex;                  /* Organiza os elementos com Flexbox */
+    width: 100%;                    /* Ocupa toda a largura disponível */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: stretch;           /* Faz os elementos ocuparem a altura disponível */
+    padding: 0;                     /* Remove o espaçamento interno */
+    height: 300px;                  /* Define a altura da área principal */
+}
+
+/* =====================================================
+   ASIDE - Área lateral da página
+   ===================================================== */
+
+aside {
+    flex: 1;                    /* Ocupa uma parte proporcional do espaço */
+    background-color: #fbf96e;  /* Define o fundo amarelo */
+    width: 100%;                /* Define a largura como 100% do espaço disponível */
+    display: flex;              /* Ativa o Flexbox */
+    justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;        /* Centraliza o conteúdo verticalmente */
+    padding: 20px;              /* Adiciona espaçamento interno */
+    height: 300px;              /* Define a altura do elemento */
+}
+
+/* =====================================================
+   CONTEUDO - Área central da página
+   ===================================================== */
+
+.conteudo {
+    flex: 2;                    /* Ocupa o dobro do espaço do ASIDE */
+    background-color: #ec62e8;  /* Define o fundo rosa */
+    width: 100%;                /* Define a largura como 100% do espaço disponível */
+    display: flex;              /* Ativa o Flexbox */
+    justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;        /* Centraliza o conteúdo verticalmente */
+    padding: 20px;              /* Adiciona espaçamento interno */
+    height: 300px;              /* Define a altura do elemento */
+}
+
+/* =====================================================
+   FOOTER - Rodapé da página
+   ===================================================== */
+
 footer {
-    background-color: #73fb6e;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    background-color: #73fb6e;  /* Define o fundo verde */
+    width: 100%;                /* Ocupa toda a largura disponível */
+    display: flex;              /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os elementos com espaçamento */
+    align-items: center;        /* Centraliza os elementos verticalmente */
+    padding: 20px;              /* Adiciona espaçamento interno */
 }
+
+/* =====================================================
+   DIVs INTERNAS DO FOOTER
+   ===================================================== */
 
 footer div {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #b3b3b3;
+    flex: 1;                    /* Distribui o espaço igualmente entre as divs */
+    display: flex;              /* Ativa o Flexbox */
+    justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;        /* Centraliza o conteúdo verticalmente */
+    padding: 10px;               /* Adiciona espaçamento interno */
+    background-color: #b3b3b3;  /* Define o fundo cinza */
+}
+
+/* =====================================================
+   MEDIA QUERY - TELAS MÉDIAS (TABLETS)
+   Aplica as configurações quando a largura for
+   igual ou inferior a 992 pixels.
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    main {
+        flex-direction: column; /* Organiza ASIDE e CONTEUDO em coluna */
+    }
+
+    aside {
+        order: 3;               /* Define a ordem de exibição */
+        width: 100%;            /* Ocupa toda a largura */
+    }
+
+    .conteudo {
+        order: 2;               /* Define a ordem de exibição */
+        width: 100%;            /* Ocupa toda a largura */
+    }
+
+    footer {
+        flex-wrap: wrap;        /* Permite que os elementos quebrem linha */
+    }
+
+    #parte1, #parte2 {
+        flex: 1 1 50%;           /* Cada elemento ocupa aproximadamente 50% */
+    }
+
+    #parte3 {
+        flex: 1 1 100%;          /* Ocupa uma linha inteira */
+    }
+}
+
+/* =====================================================
+   MEDIA QUERY - TELAS PEQUENAS (CELULARES)
+   Aplica as configurações quando a largura for
+   igual ou inferior a 768 pixels.
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    footer {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        width: 100%;             /* Ocupa toda a largura */
+    }
+
+    #parte1,
+    #parte2,
+    #parte3 {
+        flex: 1 1 100%;          /* Cada elemento ocupa 100% da linha */
+        width: 100%;             /* Define largura total */
+    }
 }
